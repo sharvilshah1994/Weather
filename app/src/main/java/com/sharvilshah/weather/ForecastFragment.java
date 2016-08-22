@@ -18,6 +18,14 @@ public class ForecastFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+        String[] forecastArray =
+                {
+                        "Today - Sunny - 88/63",
+                        "Tomorrow - Foggy - 70/40",
+                        "Wednesday - Rainy - 70/36",
+                };
+
         return rootView;
     }
 }

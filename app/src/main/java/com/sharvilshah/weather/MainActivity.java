@@ -2,6 +2,7 @@ package com.sharvilshah.weather;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,8 +12,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.listview_forecast, new ForecastFragment())
+                    .add(R.id.container, new ForecastFragment())
                     .commit();
         }
     }
+
 }
